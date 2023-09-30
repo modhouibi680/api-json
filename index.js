@@ -123,7 +123,9 @@ const app = express();
 app.use("/images", express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.send("Home Page");
+  res.send(
+    "<h2>Resources</h2><div>/search-result  - <strong>Crads List Screen</strong></div><div>/profile/:id  - <strong>Profil Screen</strong></div>"
+  );
 });
 
 const port = process.env.PORT || 4000;
