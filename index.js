@@ -144,3 +144,5 @@ app.get("/profile/:id", (req, res) => {
   const profile = findProfile(results, id);
   res.json(profile);
 });
+
+module.exports = app;
